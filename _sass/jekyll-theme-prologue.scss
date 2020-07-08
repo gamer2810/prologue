@@ -4,6 +4,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
+@font-face {
+	font-family: "Scriptina";
+	src: url("../fonts/SCRIPTIN.ttf");
+  }
+
+  @font-face {
+	font-family: "Dancing";
+	src: url("../fonts/Dancing.ttf");
+  }
+
 /*
 	Prologue by HTML5 UP
 	html5up.net | @ajlkn
@@ -59,7 +69,7 @@
 
 /* Basic */
 
-	.head{
+	.top{
 		overflow: hidden !important;
 	}
 
@@ -78,6 +88,34 @@
 		width: 100% !important;
 	}
 
+	.miniprofile_gamesection{
+		margin-top: 1 rem !important;
+		text-align: left !important;
+		justify-content: center;
+	}
+
+	.game_state{
+		font-size: 12pt !important;
+	}
+
+	.miniprofile_game_name{
+		font-size: 12pt !important;
+	}
+
+	.game_logo{
+		visibility: hidden;
+	}
+
+	.miniprofile_game_details{
+		text-align: right;
+		padding: 10px 8px 5px 20px !important;
+	}
+
+	.miniprofile_gamesection {
+		text-align: right;
+		margin-top: 0px !important;
+	}
+
 	.miniprofile_nameplatecontainer {
 		position: absolute;
 		top: 0;
@@ -91,6 +129,10 @@
 		margin-top: 2rem !important;
 	}
 
+	.friend_status_offline{
+		font-size: 12pt !important;
+	}
+
 	.xp{
 		visibility: hidden;
 	}
@@ -101,6 +143,7 @@
 		font-size: 15pt !important;
 
 		.persona{
+			font-size: 18pt !important;
 			width: 100% !important;
 			overflow:visible !important;
 		}
