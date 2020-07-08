@@ -13,7 +13,9 @@
 
 {%- if include.photo and include.photo-alt -%}
 	{%- capture _photo -%}
+	<div id="particles-js">
 		<img src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back">
+	</div>
 	{%- endcapture -%}
 	{%- assign _class = 'shade-one cover dark' -%}
 {%- else -%}

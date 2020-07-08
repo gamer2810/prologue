@@ -1,16 +1,37 @@
 ---
 title: Biển hiệu
-cover-photo: https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.0-9/90252542_1339246892937514_8275172476284043264_o.jpg?_nc_cat=109&_nc_sid=e3f864&_nc_oc=AQlEkQln-Y1zOym8mvkgCsj-rWQ91UZo5C6ZUI1cC-4uC3vOxeqAZUuWFf1xEAaow3U&_nc_ht=scontent.fsgn5-6.fna&oh=f561e8af1b89b6b86d1745443e7a0272&oe=5F2BC935
+cover-photo: https://www.wallpapermaiden.com/image/2017/10/24/anime-cafe-boy-fox-scenic-building-anime-18239.png
 cover-photo-alt: example cover photo
 auto-header: none
 icon: fa-comment
 order: 1
 ---
 <header>
-  <h2 class="alt">Hi! I'm <strong>K3K</strong><br/>
-    , and welcome to my personal hideout.</h2>
+  <!-- <h2 class="alt">Hi! I'm <strong>K3K</strong><br/>
+    , and welcome to my personal hideout.</h2> -->
+    <h2 class="cover-text ml3 alt">K3K's Kafe</h2>
   </header>
 
 <footer>
-  <h3 style="font-family: 'Scriptina';">*Inserts random Latino quote*</h3>
+  <!-- <h3 style="font-family: 'Scriptina';">*Inserts random Latino quote*</h3> -->
 </footer>
+
+<script defer>
+  var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter alt'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
