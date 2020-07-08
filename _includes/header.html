@@ -1,0 +1,17 @@
+{%- comment -%}
+  Include vars:
+  scrolly_nav
+{%- endcomment -%}
+
+<!-- Header -->
+<div id="header">
+  <div class="top">
+    <a class="steam-cover" href="https://steamcommunity.com/id/k3k2810" target="_blank" rel="noopener noreferrer">
+    {%- include logo.html -%}
+    </a>
+    {%- include nav.html section_items=include.scrolly_nav -%}
+  </div>
+  <div class="bottom">
+    {%- include social_icons.html -%}
+  </div>
+</div>
