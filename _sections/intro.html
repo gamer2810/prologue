@@ -9,7 +9,8 @@ order: 1
 <header>
   <!-- <h2 class="alt">Hi! I'm <strong>K3K</strong><br/>
     , and welcome to my personal hideout.</h2> -->
-    <h2 class="cover-text ml3 alt">K3K's Kafe</h2>
+    <h2 class="cover-text ml3 alt">K3K's 喫茶店</h2>
+    <h4 class="ml4">A kofi a day keeps the depression away</h4>
   </header>
 
 <footer>
@@ -20,18 +21,26 @@ order: 1
   var textWrapper = document.querySelector('.ml3');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter alt'>$&</span>");
 
-anime.timeline({loop: true})
+anime.timeline({loop: false})
   .add({
     targets: '.ml3 .letter',
     opacity: [0,1],
     easing: "easeInOutQuad",
     duration: 2250,
     delay: (el, i) => 150 * (i+1)
-  }).add({
-    targets: '.ml3',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
+  });
+</script>
+
+<script defer>
+  var textWrapper = document.querySelector('.ml4');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter alt'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml4 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 100 * (i+1)
   });
 </script>
