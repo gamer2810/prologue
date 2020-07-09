@@ -63,3 +63,4 @@ google_analytics:
 theme: jekyll-theme-prologue
 collections: [sections]
 include: [_pages]
+exclude: ['README.markdown', 'Gemfile.lock', 'Gemfile']
