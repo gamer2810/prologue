@@ -3,6 +3,7 @@ title: Random books
 subtitle: I hope one can make your day
 layout: "page"
 icon: fa-book
+permalink: /reading-list
 order: 3
 ---
 
