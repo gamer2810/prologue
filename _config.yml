@@ -61,6 +61,11 @@ google_analytics: UA-172121567-1
 
 # The following settings are NECESSARY for the Prologue theme to run:
 theme: jekyll-theme-prologue
-collections: [sections]
+collections: [sections,diaryentry]
 include: [_pages]
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']
+
+collections:
+  sections:
+  diaryentry:
+    output: true
