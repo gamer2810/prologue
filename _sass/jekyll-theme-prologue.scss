@@ -645,7 +645,7 @@ src: url("../fonts/Dancing.ttf");
 
 	#logo {
 		position: relative;
-		margin: 0em 1.5em 1em 1.5em;
+		margin: 0em 0em 1em 0em;
 		min-height: 48px;
 		cursor: default;
 
@@ -805,7 +805,7 @@ src: url("../fonts/Dancing.ttf");
 				z-index: 0;
 				img.back {
 					position: absolute;
-					object-fit: cover;
+					object-fit: fill;
 					width: 100%;
 					height: 100%;
 					left: 0;
