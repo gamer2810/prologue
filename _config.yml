@@ -60,7 +60,7 @@ dribbble_url:
 google_analytics: UA-172121567-1
 
 # The following settings are NECESSARY for the Prologue theme to run:
-theme: jekyll-theme-prologue
+remote-theme: jekyll-theme-prologue
 collections: [sections,diaryentry]
 include: [_pages]
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']
