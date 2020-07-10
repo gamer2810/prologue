@@ -69,3 +69,5 @@ collections:
   sections:
   diaryentry:
     output: true
+
+plugins: [jekyll-sitemap]
