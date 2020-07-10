@@ -1,5 +1,5 @@
 ---
-title: Programming Languages & Frameworks & Libs 
+title: Programming Langs
 subtitle: you know the drills
 author: Chris
 layout: post
