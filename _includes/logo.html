@@ -11,5 +11,10 @@
 
 <script defer> 
   $(function(){
+    $.ajaxSetup ({
+    // Disable caching of AJAX responses
+    cache: false
+    });
+
     $("#logo").load("https://cors-anywhere.herokuapp.com/https://steamcommunity.com/miniprofile/238158335.html")})
 </script> 
