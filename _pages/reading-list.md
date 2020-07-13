@@ -1,5 +1,5 @@
 ---
-title: Random books
+title: Other restaurants
 subtitle: I hope one can make your day
 layout: "page"
 icon: fa-book
