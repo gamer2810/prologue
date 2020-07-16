@@ -36,7 +36,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A random Vietnamese catto's attempt at learning how to make a blog.
 author: K3K
 email: khabaka321998@gmail.com
-avatar: assets/images/avatar.jpg
+avatar: assets/images/avatar.png
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "/prologue" # the subpath of your site, e.g. /blog
