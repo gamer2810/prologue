@@ -9,7 +9,7 @@ order: 1
 <header>
   <!-- <h2 class="alt">Hi! I'm <strong>K3K</strong><br/>
     , and welcome to my personal hideout.</h2> -->
-    <h2 class="cover-text ml3 alt" style="text-shadow: 4px 4px 2px rgba(0,0,0,0.6);">K3K's</h2>
+    <h2 style="white-space: pre-line;" class="cover-text ml3 alt" style="text-shadow: 4px 4px 2px rgba(0,0,0,0.6);">K3K's</p></h2>
     <h2 class="cover-text ml3 alt" style="text-shadow: 4px 4px 2px rgba(0,0,0,0.6);">深夜食堂</h2>
       <!-- <h2>深夜食堂</h2> -->
     <h4 class="ml4">A catto's [midnight diner].</h4>
@@ -20,8 +20,10 @@ order: 1
 </footer>
 
 <script defer>
-  var textWrapper = document.querySelector('.ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter alt'>$&</span>");
+  var list = document.querySelectorAll('.ml3');
+  list.forEach(textWrapper=>{
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter alt'>$&</span>");
+  })
 
 anime.timeline({loop: false})
   .add({
