@@ -6,6 +6,7 @@
 	photo-alt
 	auto-header
 	content
+	site-cover
 {%- endcomment -%}
 
 {%- assign _title = include.title | default: 'Untitled' -%}
@@ -14,7 +15,11 @@
 {%- if include.photo and include.photo-alt -%}
 	{%- capture _photo -%}
 	<div id="particles-js">
-		<img src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back">
+		{%- if include.site-cover -%}
+			<img id="cover-img" src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back">
+		{%- else -%}
+			<img src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back">
+		{%- endif -%}
 	</div>
 	{%- endcapture -%}
 	{%- assign _class = 'shade-one cover dark' -%}
