@@ -30,11 +30,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: K3K's Midnight diner
+title: K3K's Midnight Diner
 subtitle: 
 description: >- # this means to ignore newlines until "baseurl:"
-  A random catto's attempt at
-  learning how to make a blog.
+  A random Vietnamese catto's attempt at learning how to make a blog.
 author: K3K
 email: khabaka321998@gmail.com
 avatar: assets/images/avatar.jpg
