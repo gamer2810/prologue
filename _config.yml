@@ -58,7 +58,6 @@ dribbble_url:
 google_analytics: UA-172121567-1
 
 remote_theme: jekyll-theme-prologue
-collections: [sections,diaryentry]
 include: [_pages]
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']
 
@@ -74,3 +73,6 @@ disqus:
     shortname: gamer2810
 
 plugins: [jekyll-sitemap,jekyll-seo-tag]
+
+sass:
+    sass_dir: _sass
