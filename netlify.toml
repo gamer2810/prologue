@@ -22,7 +22,7 @@
 [context.production]
   publish = "_site/"
   command = "bundle exec jekyll build"
-  environment = { ACCESS_TOKEN = "super secret", NODE_VERSION = "8.0.1" }
+  environment = { ACCESS_TOKEN = "test_default"}
 
 # Deploy Preview context: all deploys generated from a pull/merge request will
 # inherit these settings.
