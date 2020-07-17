@@ -24,6 +24,7 @@ order: 5
     //         (d.head || d.body).appendChild(s);
     //     })();
     // } else {
+        $(function () { 
         var waypoint = new Waypoint({
             element: document.getElementById('disqus_thread'),
             handler: function () { // DON'T EDIT BELOW THIS LINE
@@ -36,6 +37,7 @@ order: 5
             },
             offset: 'bottom-in-view'
         });
+    });
     // }
 
 
