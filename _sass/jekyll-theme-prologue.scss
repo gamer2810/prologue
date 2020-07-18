@@ -935,6 +935,10 @@ button,
 @include breakpoint(wide) {
 	/* Basic */
 
+	.col{
+		width: 50% !important;
+	}
+
 	body,
 	input,
 	textarea,
@@ -966,6 +970,10 @@ button,
 
 @include breakpoint(normal) {
 	/* Main */
+
+	.col{
+		width: 50% !important;
+	}
 
 	#main {
 		> section,
@@ -1095,6 +1103,10 @@ button,
 
 @include breakpoint(narrower) {
 	/* Basic */
+
+	.col{
+		width: 100% !important;
+	}
 
 	html,
 	body {
@@ -1277,6 +1289,10 @@ button,
 
 @include breakpoint(mobile) {
 	/* Basic */
+
+	.col{
+		width: 100% !important;
+	}
 
 	#cover-img{
 		content:url("../images/cover-small.png");
