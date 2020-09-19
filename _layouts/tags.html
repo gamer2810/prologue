@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{%- include header.html -%}
+<div id="main">
+{% for collection in site.collections %}
+    {% if collection.label != 'sections' %}
+        {%- include archive.html title=collection.label content=collection.docs -%}
+    {% endif %}
+{% endfor %}
+</div>

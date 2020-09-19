@@ -1,0 +1,65 @@
+{%- comment -%}
+  Include vars:
+	title
+  subtitle
+	photo
+	photo-alt
+	auto-header
+	content
+	site-cover
+{%- endcomment -%}
+
+{%- assign _title = include.title | default: 'Untitled' -%}
+{%- assign _slug = include.title | strip_html | slugify | default: 'untitled' -%}
+{%- assign _tags = include.tags -%}
+
+{%- if include.photo and include.photo-alt -%}
+	{%- capture _photo -%}
+	<div id="particles-js">
+		{%- if include.site-cover -%}
+			<img id="cover-img" src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back">
+		{%- else -%}
+			<img src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back">
+		{%- endif -%}
+	</div>
+	{%- endcapture -%}
+	{%- assign _class = 'shade-one cover dark' -%}
+{%- else -%}
+	{%- assign _photo = '' -%}
+	{%- capture _class -%}shade-{%- cycle 'two', 'three', 'four', 'three' -%}{%- endcapture -%}
+{%- endif -%}
+
+{%- if include.auto-header == 'none' -%}
+	{%- assign _heading = "" -%}
+{%- else -%}
+	{%- capture _heading -%}
+		<header>
+			<h2 style="text-transform: uppercase;">
+        {%- if include.auto-header == null or include.auto-header == 'use-title' -%}
+          {{- _title -}}
+        {%- else -%}
+          {{- include.auto-header -}}
+        {%- endif -%}
+      </h2>
+      {%- if include.subtitle -%}<p>{{- include.subtitle -}}</p>{%- endif -%}
+		</header>
+	{%- endcapture -%}
+{%- endif -%}
+
+<section id="{{- _slug -}}" class="{{- _class -}}">
+  <div class="container">
+      {{- _heading -}}
+    <div style="text-align: left;">
+        <ul>
+        {% for post in include.content %}
+            <li><a href={{post.url}}>{{post.title}}</a>
+                {% assign tsize = post.tags | size %}
+                {% if tsize != 0%}
+                   <span style="font-weight: bold;"> [{{post.tags | join: ", "}}]</span>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+  </div>
+</section>
