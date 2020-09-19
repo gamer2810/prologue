@@ -51,10 +51,12 @@
     {{- _photo -}}
 	{{- _heading -}}
 	<h5 style="display:inline"> Tags: </h5>
-	{%- for _tag in _tags | spli -%}
-		<a>{{- _tag -}}</a>
-		<span> </span>
-	{%- endfor -%}
+	{%- if _tags != null -%}
+		{%- for _tag in _tags -%}
+			<a>{{- _tag -}}</a>
+			<span> </span>
+		{%- endfor -%}
+	{%- endif -%}
     {{- include.content -}}
   </div>
 </section>
