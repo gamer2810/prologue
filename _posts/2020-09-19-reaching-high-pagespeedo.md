@@ -2,6 +2,7 @@
 title: Reaching High PageSpeedo
 date: 2020-09-19T09:02:02.766Z
 author: K3K
+layout: post
 tags:
   - optimization
   - web
