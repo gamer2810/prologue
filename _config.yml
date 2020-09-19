@@ -67,6 +67,8 @@ collections:
     output: true
   reading:
     output: true
+  tags:
+    output: true
 
 # Disqus Comments
 disqus:

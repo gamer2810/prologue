@@ -53,13 +53,10 @@
 	{%- if _tags != null -%}
 		<h5 style="display:inline"> Tags: </h5>
 		{%- for _tag in _tags -%}
-			<a>{{- _tag -}}</a>
+			<a>{{- _tag | join: ", " -}}</a>
 			<span> </span>
 		{%- endfor -%}
 	{%- endif -%}
-	<div style="text-align: left;">
-		<br>
 	{{- include.content -}}
-	</div>
   </div>
 </section>

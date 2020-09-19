@@ -61,6 +61,8 @@ GEM
       nokogiri (~> 1.6)
       progressbar (~> 1.9)
       verbal_expressions (~> 0.1.5)
+    jekyll-archives (2.2.1)
+      jekyll (>= 3.6, < 5.0)
     jekyll-paginate-v2 (3.0.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-sass-converter (2.1.0)
@@ -69,6 +71,8 @@ GEM
       jekyll (>= 3.3, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-tagging (1.1.0)
+      nuggets
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jemoji (0.12.0)
@@ -89,6 +93,7 @@ GEM
     minitest (5.14.1)
     nokogiri (1.10.10-x64-mingw32)
       mini_portile2 (~> 2.4.0)
+    nuggets (1.6.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     progressbar (1.10.1)
@@ -117,9 +122,11 @@ DEPENDENCIES
   bundler (~> 2.1.4)
   jekyll (~> 4.1)
   jekyll-algolia
+  jekyll-archives
   jekyll-paginate-v2 (~> 3.0)
   jekyll-seo-tag (~> 2.6)
   jekyll-sitemap (~> 1.4)
+  jekyll-tagging
   jekyll-theme-prologue!
   jemoji (~> 0.12.0)
 
