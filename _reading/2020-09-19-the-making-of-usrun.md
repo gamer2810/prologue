@@ -5,7 +5,6 @@ tags:
   - USRUN
   - dev
 ---
-<!--StartFragment-->
 
 USRUN - ỨNG DỤNG HỖ TRỢ NGƯỜI CHẠY BỘ TRÊN THIẾT BỊ DI ĐỘNG TỪ HCMUS
 
@@ -33,4 +32,3 @@ Tải đi chờ chi! ![👇](https://static.xx.fbcdn.net/images/emoji.php/v9/ta8
 
 [https://tinyurl.com/usrunggplay](https://l.facebook.com/l.php?u=https%3A%2F%2Ftinyurl.com%2Fusrunggplay%3Ffbclid%3DIwAR1sU68ind7hOo8p3H41PJ13hvDq9ZbOoqK1pAf2-akrV1_YZIKNglABhtU&h=AT2dDw1slZ7mBbFFSNrIJgPArVMVvQpDgQ_8ZxS9w70hArY0xUUQ1gBSuzchS4rcHROm-tyA5DQysrV0G22Ps-ZE0v-HNTwztfiTRj4oAmFX4F9_WRydeZfpYTaB--LEKr41&__tn__=-UK-R&c[0]=AT2XS1B40_2EBlNhMPVWpp3OXzt2318Ph8oQyVAXVCNo6rKnC7Ge2VWOgVN-mqLvcSHD8AWrPrKKYF6Q1zg51HOEHECtj2Cwub84k3u4mO6iHqdPyxZNlM6EwPiKD0SFF4LrLsyHCyZPXfUdb4283fZR6ObWX2i8QtXopo1VTyKuYxLCLR2X3y82TQ)
 
-<!--EndFragment-->
