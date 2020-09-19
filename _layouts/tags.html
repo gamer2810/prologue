@@ -5,7 +5,8 @@ layout: default
 <div id="main">
 {% for collection in site.collections %}
     {% if collection.label != 'sections' %}
-        {%- include archive.html title=collection.label content=collection.docs -%}
+        {%- assign docs = collection.docs | sort: 'date' | reverse -%}
+        {%- include archive.html title=collection.label content=docs -%}
     {% endif %}
 {% endfor %}
 </div>
