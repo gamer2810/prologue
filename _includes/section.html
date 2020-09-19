@@ -50,8 +50,8 @@
   <div class="container">
     {{- _photo -}}
 	{{- _heading -}}
-	<h5 style="display:inline"> Tags: </h5>
 	{%- if _tags != null -%}
+		<h5 style="display:inline"> Tags: </h5>
 		{%- for _tag in _tags -%}
 			<a>{{- _tag -}}</a>
 			<span> </span>
