@@ -65,6 +65,8 @@ collections:
   sections:
   diaryentry:
     output: true
+  reading:
+    output: true
 
 # Disqus Comments
 disqus:

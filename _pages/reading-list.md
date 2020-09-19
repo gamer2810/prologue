@@ -1,9 +1,9 @@
----
+<!-- ---
 title: Other Diners
 subtitle: I hope one can make your day
 layout: "page"
 icon: fa-book
-permalink: /reading-list
+# permalink: /reading-list
 order: 3
 ---
 
@@ -20,4 +20,4 @@ I love books! Here are some I'm reading now:
 9. Karl Marx: *Capital*
 10. James Woodforde: *The Diary of A Country Parson*
 
-source: [The Guardian](https://www.theguardian.com/books/booksblog/2011/jan/04/best-boring-books)
+source: [The Guardian](https://www.theguardian.com/books/booksblog/2011/jan/04/best-boring-books) -->

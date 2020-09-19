@@ -1,6 +1,7 @@
 ---
 title: Adding  Netlify CMS to an existing GHPages-hosted page
 date: 2020-07-21T09:52:02.112Z
+order: 1
 tags:
   - making-of-this-blog
   - material

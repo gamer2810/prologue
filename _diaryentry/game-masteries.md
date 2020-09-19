@@ -1,7 +1,7 @@
 ---
 title: Game Masteries
 author: K3K
-layout: section
+layout: post
 order: 1
 ---
 
