@@ -1,0 +1,88 @@
+---
+title: B2B - Sorting Algorithms
+author: K3K
+layout: post
+icon: fa-lightbulb
+icon-style: regular
+tags: [b2b,sorting,algorithms]
+comments: true
+---
+<blockquote>Because every interview got a question or two about them.</blockquote>
+<br>
+
+Hewwo, this is captain K speaking. This is the start of the B2B [Back 2 Basics] series where I [re-]learn things from school.
+Today we'll start with sorting algorithms. The sample code will be written in Java and/or Python.
+
+<h3>Definition</h3>
+<br>
+
+<h3>Comparision Sorts</h3>
+<br>
+	<dl>
+        <dt>Insertion Sort</dt>
+		<dd>
+            <h5>Core Idea: </h5>
+            <p>
+                Assuming we're looping from the array's start:<br>
+                For each element, move it to the left until [left <= current].
+            </p>
+            <h5>Sample Implementation:</h5>
+            <pre class="prettyprint" style="font-size: medium; line-height: 0.5cm;">
+
+    int* a = [3,6,2];
+    int tempNum;
+    int curPos = 0;
+    for(int i = 0; i < a.length;i++){
+        curPos = i;
+        while(curPos > 0 || a[i] < a[curPos - 1]){
+            curPos--;
+        }
+        if(curPos != i){
+            //swaps a[i] and a[curPos]
+        }
+    }
+            </pre>
+            <h5>Extras & Gotchas</h5>
+            <ul>
+                <li>Costly if the element sits too far from its sorted position.</li>
+            </ul>
+		</dd>
+		<dt>Bubble Sort</dt>
+		<dd>
+			<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+		</dd>
+		<dt>Quick Sort</dt>
+		<dd>
+			<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+		</dd>
+		<dt>Merge Sort</dt>
+		<dd>
+			<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+		</dd>
+	</dl>
+<br>
+
+<h3>Non-Comparision Sorts</h3>
+<br>
+	<dl>
+		<dt>Bubble Sort</dt>
+		<dd>
+			<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+		</dd>
+		<dt></dt>
+		<dd>
+			<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+		</dd>
+		<dt>Item 3</dt>
+		<dd>
+			<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+		</dd>
+    </dl>
+<br>
+
+
+<h5>References</h5>
+<ul>
+    <li>For list of sorting algs: <a href="https://en.wikipedia.org/wiki/Sorting_algorithm">Wikipedia</a></li>
+    <li>For in-depth info on a specific alg: <a href="https://www.geeksforgeeks.org/sorting-algorithms/">GeeksforGeeks</a></li>
+</ul>
