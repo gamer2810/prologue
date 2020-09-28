@@ -28,7 +28,14 @@ The sample code will be written in Java and/or Python.
             <h5>Core Idea: </h5>
             <p>
                 Assuming we're looping from the array's start:<br>
-                For each element, move it to the left until [left <= current].
+                For each element, move it towards the start of the array until <em>[current >= previous]</em>.<br>
+                This ensures that the traversed portion of the array is sorted.<br>
+                Example: <br>
+                Array: [1,5,6,3]<br>
+                <b>Iteration 1:</b> (1) => got nothing previous to compare to => not moved.<br>
+                <b>Iteration 2:</b> (5) => (5) >= (1) => not moved.<br>
+                <b>Iteration 3:</b> (6) => (6) >= (5) => not moved.<br>
+                <b>Iteration 4:</b> (3)<br>=> (3) >= (6) && (3) >= (5)<br>=> move (3) up 2 positions<br>=> Sorted Array: [1,3,5,6].
             </p>
             <h5>Sample Implementation:</h5>
             <pre class="prettyprint" style="font-size: medium; line-height: 0.5cm;">
