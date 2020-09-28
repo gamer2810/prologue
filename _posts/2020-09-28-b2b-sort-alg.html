@@ -81,8 +81,27 @@ Today we'll start with sorting algorithms. The sample code will be written in Ja
 <br>
 
 
-<h5>References</h5>
+<h3>References</h3>
 <ul>
     <li>For list of sorting algs: <a href="https://en.wikipedia.org/wiki/Sorting_algorithm">Wikipedia</a></li>
     <li>For in-depth info on a specific alg: <a href="https://www.geeksforgeeks.org/sorting-algorithms/">GeeksforGeeks</a></li>
 </ul>
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script defer>
+    var disqusload = false; //initiate as false
+        var waypoint = new Waypoint({
+            element: document.getElementById('disqus_thread'),
+            handler: function () { // DON'T EDIT BELOW THIS LINE
+                if(disqusload) return;
+                var d = document, s = d.createElement('script');
+                s.src = 'https://gamer2810.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                disqusload = true;
+            },
+            offset: 'bottom-in-view',
+    });
+</script>
+{% endif %}
