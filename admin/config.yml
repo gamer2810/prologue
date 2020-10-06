@@ -19,6 +19,8 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Author", name: "author", widget: "string", default: "K3K"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Comments", name: "comments", widget: "boolean", default: true}
+      - {label: "Table of Contents", name: "toc", widget: "boolean", default: true}
 
   - name: "diary" # Used in routes, e.g., /admin/collections/blog
     label: "Diary Entry" # Used in the UI
