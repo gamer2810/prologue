@@ -74,7 +74,7 @@ disqus:
     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
     shortname: gamer2810
 
-plugins: [jekyll-sitemap,jekyll-seo-tag]
+plugins: [jekyll-sitemap,jekyll-seo-tag, jekyll-toc]
 
 sass:
     sass_dir: _sass

@@ -9,10 +9,56 @@ layout: default
 	<article class="shade-two">
 	  <div class="container">
 			<header>
-				<h2>{{- page.title -}}</h2>
+				<h1>{{- page.title -}}</h1>
 				<p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
 			</header>
-	    {{- content -}}
+	    {{- content | toc -}}
 	  </div>
 	</article>
+
+	<script>
+		var anchorForId = function (id) {
+		  var anchor = document.createElement("a");
+		  anchor.className = "header-link";
+		  anchor.href = "#" + id;
+		  anchor.innerHTML = '<span> </span><i class="fa fa-link" style="font-size: smaller;"></i>';
+		  return anchor;
+		};
+	
+		var linkifyAnchors = function (level, containingElement) {
+		  var headers = containingElement.getElementsByTagName("h" + level);
+		  var toc = document.getElementById("toc");
+	
+		  for (var h = 0; h < headers.length; h++) {
+			var header = headers[h];
+			var id =
+			 header.innerText.replace(/\s/g, "-").replace(/[^-a-z0-9]+/i, "").toLowerCase();
+			header.setAttribute("id", id);
+	
+			header.appendChild(anchorForId(id));
+	
+			// let li = document.createElement("li");
+			// let a = document.createElement("a");
+			// a.setAttribute('href',header.id);
+			// a.setAttribute('innerText',header.innerText);
+			// li.appendChild(a);
+	
+			// if(toc != undefined){
+			// 	toc.appendChild(li);
+			// }
+		  }
+		};
+	
+		document.onreadystatechange = function () {
+		  if (this.readyState === "complete") {
+			var contentBlock = document.getElementById("main");
+			if (!contentBlock) {
+			  return;
+			}
+			for (var level = 2; level <= 6; level++) {
+			  linkifyAnchors(level, contentBlock);
+			}
+		  }
+		};
+	  </script>
 </div>
