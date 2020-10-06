@@ -8,6 +8,8 @@ tags:
   - webdev
   - performance
 author: K3K
+comments: true
+toc: true
 ---
 After playing around with Google Lighthouse, I found various places in the code where I can easily improve to enhance this site's performance. This note serves both as a to-do list for this site and a note of things to check for when developing any web page.
 
