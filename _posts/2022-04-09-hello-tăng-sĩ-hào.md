@@ -12,3 +12,4 @@ author: K3K
 ---
 Starting new job as a junior Java Developer @ Momo VN.
 Gonna start updating this blog soon.
+ABCDEGF
