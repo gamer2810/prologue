@@ -8,7 +8,7 @@ author: K3K
 ---
 Blog page added to test the cache action in github action pipeline.
 
-Deploy time should be decreased now that the dependencies are cached.
+Deploy time should be decreased now that the depeeendencies are cached.
 
 ```
 test code block also
