@@ -120,19 +120,19 @@
   color: #e6db74;
 }
 .highlight .na {
-  color: #da4a69;
+  color: #f1bfca;
 }
 .highlight .nc {
-  color: #da4a69;
+  color: #f1bfca;
 }
 .highlight .nd {
-  color: #da4a69;
+  color: #f1bfca;
 }
 .highlight .ne {
-  color: #da4a69;
+  color: #f1bfca;
 }
 .highlight .nf, .highlight .fm {
-  color: #da4a69;
+  color: #f1bfca;
 }
 .highlight .vc {
   color: #ffffff;
@@ -194,5 +194,5 @@
   color: blanchedalmond;
 }
 .highlight .o {
-  color: blanchedalmond;
+  color: rgb(255, 220, 168);
 }
