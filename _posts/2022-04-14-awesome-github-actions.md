@@ -8,10 +8,14 @@ author: K3K
 ---
 Blog page added to test the cache action in github action pipeline.
 
-Deploy time should be decreased now that the depeeendencies are cached.
+Deploy time should be decreased now that the dependencies are cached.
 
-```
-test code block also
+```java
+public class Main {
+  public static void main(){
+    System.out.println("Hello world!");
+  }
+}
 ```
 
 https://github.com/gamer2810/prologue/runs/
