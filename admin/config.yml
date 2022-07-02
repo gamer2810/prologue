@@ -2,7 +2,8 @@ backend:
   name: github
   repo: gamer2810/prologue
   branch: master
-  site_domain: boring-mcnulty-065efa.netlify.com
+  site_domain: beautiful-semolina-980a9f
+  
 
 media_folder: "/assets/images"
 
