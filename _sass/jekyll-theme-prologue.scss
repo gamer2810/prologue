@@ -123,6 +123,8 @@
 	// background-repeat: repeat;
 	background-color: #faded7;
 	padding: 0 !important;
+	min-height: 100vh !important;
+	background: #2b2b2b !important;
   	// background-blend-mode: lighten;
 }
 
@@ -969,8 +971,6 @@ button,
 
 	#main {
 		margin-left: 325px;
-		min-height: 100vh;
-		background: #2b2b2b;
 	}
 }
 
