@@ -3,7 +3,6 @@ backend:
   repo: gamer2810/prologue
   branch: master
   site_domain: 34b94c1e-5c1f-4b85-a9f6-559fad80f455
-  base_url: https://me.k3k.dev/
   
 
 media_folder: "/assets/images"
