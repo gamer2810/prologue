@@ -3,6 +3,7 @@ backend:
   repo: gamer2810/prologue
   branch: master
   site_domain: beautiful-semolina-980a9f
+  base_url: https://me.k3k.dev/
   
 
 media_folder: "/assets/images"
