@@ -1,6 +1,7 @@
 ---
 title: Redis Overview
 date: 2022-04-15T11:40:38.766Z
+layout: reading
 tags:
   - redis
   - cache

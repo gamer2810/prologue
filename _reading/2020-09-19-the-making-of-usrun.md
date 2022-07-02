@@ -1,6 +1,7 @@
 ---
 title: The making of USRUN
 date: 2020-09-19T08:49:58.174Z
+layout: reading
 tags:
   - USRUN
   - dev
