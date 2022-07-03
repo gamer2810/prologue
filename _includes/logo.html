@@ -1,20 +1,54 @@
 <!-- Logo -->
 <div>
   <h3 id="nameplate" style="text-align: left; padding-left:0.5em; color:aliceblue">マスター</h3>
-    <a class="steam-cover" href="https://steamcommunity.com/id/k3k2810" target="_blank" rel="noopener noreferrer">
-      <div id="logo">
+  <a class="steam-cover" href="https://steamcommunity.com/id/k3k2810" target="_blank" rel="noopener noreferrer">
+    <div id="logo">
 
+      <div class="miniprofile_container">
+        <!-- Background -->
+        <div class="miniprofile_nameplatecontainer">
+          <video class="miniprofile_nameplate" playsinline autoplay muted loop>
+            <source
+              src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/933820/ea89a1696499810296b6c25185352e9e258f8526.webm"
+              type="video/webm">
+            <source
+              src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/933820/c2ed532cfed4cbb3afd1bacc9b3c31481217b94d.mp4"
+              type="video/mp4">
+          </video>
+        </div>
+        <div class="miniprofile_playersection text_shadow">
+          <!-- Player avatar/name stuff -->
+          <div class="playersection_avatar_frame">
+            <img
+              src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1069740/85030942387d8c7803922f84c31e82bc42728279.png">
+          </div>
+          <div class="playersection_avatar border_color_online">
+            <img src="https://avatars.cloudflare.steamstatic.com/c5fd8fcc8cb58fa8f71854aba3da644fded00230_medium.jpg"
+              srcset="https://avatars.cloudflare.steamstatic.com/c5fd8fcc8cb58fa8f71854aba3da644fded00230_medium.jpg 1x, https://avatars.cloudflare.steamstatic.com/c5fd8fcc8cb58fa8f71854aba3da644fded00230_full.jpg 2x">
+          </div>
+          <div class="player_content">
+            <span class="persona online">Furri</span>
+            <span class="friend_status_online">Online</span>
+          </div>
+        </div>
+        <div class="miniprofile_detailssection miniprofile_backdropblur not_in_game miniprofile_backdrop">
+          <div class="miniprofile_featuredcontainer">
+            <img
+              src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/206440/67e23690ce7aad7e097d828463fb0adf4932a5ab.png"
+              class="badge_icon">
+            <div class="description">
+              <div class="name">Fading Memories</div>
+              <div class="xp">100 XP</div>
+            </div>
+          </div>
+          <div class="miniprofile_featuredcontainer">
+            <div class="friendPlayerLevel lvl_70"><span class="friendPlayerLevelNum">73</span></div>
+            <div class="description">
+              <div class="name">Steam Level</div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </a>
 </div>
-
-
-<script defer> 
-  $(function(){
-    $.ajaxSetup ({
-    // Disable caching of AJAX responses
-    cache: false
-    });
-
-    $("#logo").load("https://gamer2810.github.io/steam-miniprofile/")})
-</script> 
