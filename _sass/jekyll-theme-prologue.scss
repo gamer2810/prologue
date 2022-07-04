@@ -153,16 +153,16 @@ html {
 	background: #ff0000;
 }
 
- .persona.in-game{
-	margin-bottom: 20px !important;
- }
+//  .persona.in-game{
+// 	margin-bottom: 20px !important;
+//  }
 
-.steam-cover {
-	z-index: 10;
-	:hover {
-		cursor: pointer;
-	}
-}
+// .steam-cover {
+// 	z-index: 10;
+// 	:hover {
+// 		cursor: pointer;
+// 	}
+// }
 
 .miniprofile_container {
 	width: 100% !important;
@@ -172,71 +172,71 @@ html {
 	width: 100% !important;
 }
 
-.miniprofile_gamesection {
-	padding-left: 15% !important;
-	margin-top: 1 rem !important;
-	text-align: left !important;
-	justify-content: center;
-}
+// .miniprofile_gamesection {
+// 	padding-left: 15% !important;
+// 	margin-top: 1 rem !important;
+// 	text-align: left !important;
+// 	justify-content: center;
+// }
 
-.game_state {
-	font-size: 12pt !important;
-}
+// .game_state {
+// 	font-size: 12pt !important;
+// }
 
-.miniprofile_game_name {
-	font-size: 12pt !important;
-}
+// .miniprofile_game_name {
+// 	font-size: 12pt !important;
+// }
 
-.game_logo {
-	visibility: hidden;
-}
+// .game_logo {
+// 	visibility: hidden;
+// }
 
-.miniprofile_game_details {
-	text-align: right;
-	padding: 10px 8px 5px 20px !important;
-}
+// .miniprofile_game_details {
+// 	text-align: right;
+// 	padding: 10px 8px 5px 20px !important;
+// }
 
-.miniprofile_gamesection {
-	text-align: right;
-	margin-top: 0px !important;
-}
+// .miniprofile_gamesection {
+// 	text-align: right;
+// 	margin-top: 0px !important;
+// }
 
-.miniprofile_nameplatecontainer {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-}
+// .miniprofile_nameplatecontainer {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	z-index: -1;
+// }
 
-.miniprofile_detailssection {
-	margin-top: 2rem !important;
-}
+// .miniprofile_detailssection {
+// 	margin-top: 2rem !important;
+// }
 
-.miniprofile_gamesection+.miniprofile_detailssection {
-	margin-top: 0 !important;
-}
+// .miniprofile_gamesection+.miniprofile_detailssection {
+// 	margin-top: 0 !important;
+// }
 
-.friend_status_offline {
-	font-size: 12pt !important;
-}
+// .friend_status_offline {
+// 	font-size: 12pt !important;
+// }
 
-.xp {
-	visibility: hidden;
-}
+// .xp {
+// 	visibility: hidden;
+// }
 
-.player_content {
-	padding-top: 10% !important;
-	width: 10%;
-	font-size: 15pt !important;
+// .player_content {
+// 	padding-top: 10% !important;
+// 	width: 10%;
+// 	font-size: 15pt !important;
 
-	.persona {
-		font-size: 18pt !important;
-		width: 100% !important;
-		overflow: visible !important;
-	}
-}
+// 	.persona {
+// 		font-size: 18pt !important;
+// 		width: 100% !important;
+// 		overflow: visible !important;
+// 	}
+// }
 
 body {
 	font-family: "Sahitya", sans-serif;
