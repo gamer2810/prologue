@@ -7,7 +7,7 @@
     -%} {%- unless _pages == null -%} {%- assign _pages = _pages | sort: 'order'
     -%}
     <li>
-      <h3 style="text-align: center">Pages</h3>
+      <h3 style="text-align: center">Directories</h3>
     </li>
     {%- for _page in _pages -%} {%- assign _title = _page.title | default:
     _page.layout -%} {%- assign _slug = _title | slugify -%} {%- assign _icon =
@@ -37,7 +37,7 @@
     include.section_items | where_exp: "section", "section.hide != true" -%} {%-
     if _pages[0] and _sections[0] -%}
     <hr />
-    <h3 style="text-align: center">Sections</h3>
+    <h3 style="text-align: center">In This Page</h3>
     {%- endif -%} {%- unless _sections == null -%} {%- for _sect in _sections
     -%} {%- assign _title = _sect.title | default: _sect.layout | default:
     'Untitled' -%} {%- assign _slug = _title | slugify -%} {%- assign _icon =
