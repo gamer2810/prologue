@@ -1,16 +1,30 @@
 ---
-title: 404 Error
+title: Timeline Incorrect Exception
 layout: page
 icon: fa-unlink
 permalink: /404
 hide: true
 canonical: false
 ---
-<div class="col">
-    <img class="featured" src="https://w0.pngwave.com/png/1008/299/konosuba-meme-anime-4chan-rage-comic-meme-png-clip-art-thumbnail.png" alt="404 image">
+
+<div class="col" style="height: 100% !important;">
+    <p>Er, I am afraid that you are not meant to be here.</p>
+    <p>This page does exist. But it's in another timeline.</p>
+    <p>You would need to reach universe Alternative-<span id="random-universe"></span> to check it out!</p>
+    <br>
+    <p>Back to the current timeline <a href="/">Main Page</a> instead? </p>
 </div>
 
-<div  class="col" style="height: 100% !important;">
-<p>Er, I am afraid that you are not meant to be here.</p>
-<p>Go back to the <a href="/prologue/index">Main Page</a> instead? </p>
-</div>
+<script>
+    function makeid() {
+        var text = "";
+        var possible = "0123456789";
+
+        for (var i = 0; i < 5; i++)
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+        return text;
+    }
+
+    document.getElementById("random-universe").innerText = makeid()
+</script>
