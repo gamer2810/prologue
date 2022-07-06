@@ -30,13 +30,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: K3K's Midnight Diner
+title: Kha Trần H
 subtitle: 
 description: >- # this means to ignore newlines until "baseurl:"
-  A random Vietnamese catto's attempt at learning how to make a blog.
-author: K3K
+  A random Vietnamese catto's attempt at learning how to make a blog
+  using out-of-the-box solutions.
+author: Kha Trần
 email: khabaka321998@gmail.com
-avatar: assets/images/avatar.png
+avatar: /assets/images/avatar.png
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -54,6 +55,13 @@ stackoverflow_url:
 pinterest_url:
 slack_url:
 dribbble_url:
+
+social:
+  name: Kha Trần
+  links:
+    - https://www.facebook.com/minh.kha.1441/
+    - https://github.com/gamer2810/
+    - https://www.linkedin.com/in/kha-3k-tran/
 
 google_analytics: UA-172121567-1
 
