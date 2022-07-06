@@ -14,9 +14,11 @@
 
 		@if $style == brands {
 			font-family: "Font Awesome 5 Brands";
+			font-display: swap;
 		}
 		@else {
 			font-family: "Font Awesome 5 Free";
+			font-display: swap;
 		}
 
 		@if $style == regular {
