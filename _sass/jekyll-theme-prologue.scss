@@ -109,9 +109,13 @@
 /* Basic */
 
 .tableofcontent {
-	border: 5px dashed blanchedalmond;
+	border: 3px dashed blanchedalmond;
 	width: 40%;
 	padding: 3%;
+}
+
+.tableofcontent > * {
+	margin-bottom: 0;
 }
 
 .bottom>ul{
