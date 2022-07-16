@@ -7,78 +7,80 @@ layout: default
 <div id="main">
 	<!-- Post -->
 	<article class="shade-two">
-	  <div class="container">
+		<div class="container">
 			<header>
 				<h1>{{- page.title -}}</h1>
 				<p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
-			</header> 
-		{% include toc.html html=content %}
-		{{- content -}}
-	  </div>
+			</header>
+			{% include toc.html html=content %}
+			{{- content -}}
+
+			{% if page.comments %}
+			<div id="disqus_thread"></div>
+			<script defer>
+				var disqusload = false; //initiate as false
+				var waypoint = new Waypoint({
+					element: document.getElementById('disqus_thread'),
+					handler: function () { // DON'T EDIT BELOW THIS LINE
+						if (disqusload) return;
+						var d = document, s = d.createElement('script');
+						s.src = 'https://gamer2810.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+						disqusload = true;
+					},
+					offset: 'bottom-in-view',
+				});
+			</script>
+			{% endif %}
+		</div>
+
+
 	</article>
 
 	<script defer>
 		var anchorForId = function (id) {
-		  var anchor = document.createElement("a");
-		  anchor.className = "header-link";
-		  anchor.href = "#" + id;
-		  anchor.innerHTML = '<span> </span><i class="fa fa-link" style="font-size: 60%;"></i>';
-		  return anchor;
+			var anchor = document.createElement("a");
+			anchor.className = "header-link";
+			anchor.href = "#" + id;
+			anchor.innerHTML = '<span> </span><i class="fa fa-link" style="font-size: 60%;"></i>';
+			return anchor;
 		};
-	
-		var linkifyAnchors = function (level, containingElement) {
-		  var headers = containingElement.getElementsByTagName("h" + level);
-		  var toc = document.getElementById("toc");
-	
-		  for (var h = 0; h < headers.length; h++) {
-			var header = headers[h];
-			var id =
-			 header.innerText.replace(/\s/g, "-").replace(/[^a-zA-Z0-9-]/g, "").toLowerCase();
-			header.setAttribute("id", id);
-	
-			header.appendChild(anchorForId(id));
-	
-			let li = document.createElement("li");
-			let a = document.createElement("a");
-			a.setAttribute('href',header.id);
-			a.setAttribute('innerText',header.innerText);
-			li.appendChild(a);
-	
-			if(toc != undefined){
-				toc.appendChild(li);
-			}
-		  }
-		};
-	
-		document.onreadystatechange = function () {
-		  if (this.readyState === "complete") {
-			var contentBlock = document.getElementById("main");
-			if (!contentBlock) {
-			  return;
-			}
-			for (var level = 2; level <= 6; level++) {
-			  linkifyAnchors(level, contentBlock);
-			}
-		  }
-		};
-	  </script>
 
-{% if page.comments %}
-<div id="disqus_thread"></div>
-<script defer>
-    var disqusload = false; //initiate as false
-        var waypoint = new Waypoint({
-            element: document.getElementById('disqus_thread'),
-            handler: function () { // DON'T EDIT BELOW THIS LINE
-                if(disqusload) return;
-                var d = document, s = d.createElement('script');
-                s.src = 'https://gamer2810.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                disqusload = true;
-            },
-            offset: 'bottom-in-view',
-    });
-</script>
-{% endif %}
+		var linkifyAnchors = function (level, containingElement) {
+			var headers = containingElement.getElementsByTagName("h" + level);
+			var toc = document.getElementById("toc");
+
+			for (var h = 0; h < headers.length; h++) {
+				var header = headers[h];
+				var id =
+					header.innerText.replace(/\s/g, "-").replace(/[^a-zA-Z0-9-]/g, "").toLowerCase();
+				header.setAttribute("id", id);
+
+				header.appendChild(anchorForId(id));
+
+				let li = document.createElement("li");
+				let a = document.createElement("a");
+				a.setAttribute('href', header.id);
+				a.setAttribute('innerText', header.innerText);
+				li.appendChild(a);
+
+				if (toc != undefined) {
+					toc.appendChild(li);
+				}
+			}
+		};
+
+		document.onreadystatechange = function () {
+			if (this.readyState === "complete") {
+				var contentBlock = document.getElementById("main");
+				if (!contentBlock) {
+					return;
+				}
+				for (var level = 2; level <= 6; level++) {
+					linkifyAnchors(level, contentBlock);
+				}
+			}
+		};
+	</script>
 </div>
