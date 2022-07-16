@@ -10,6 +10,9 @@ comments: true
 toc: true
 author: K3K
 ---
+
+### Intro
+
 Hello everyone, It's K3K here. It's been 4 months since I joined MoMo(M_Service) as a Software Engineer.
 
 Last week, they started a learning campaign and gave me a Pluralsight subscription.
@@ -27,7 +30,7 @@ Pluralsight has this feature called "Paths" which combines multiple courses into
 I decided to follow the [
 Java SE 11 Developer Certification (1Z0-819)](https://app.pluralsight.com/paths/certificate/java-se-11-developer-certification-1z0-819#) path because while we're at it, why not getting a certificate to prove that I actually learnt something and my time was well-spent?
 
-<br>
+### "Getting the OCP 11 Cert" series overview
 
 This series of blogs will serve as my learning diary and study notes. I hope that you finds it of help :D
 
@@ -49,3 +52,5 @@ These were taken at the time of upload, please check the [Oracle Education](http
 * Annotations
 
 See you in the next blog entry :D
+<br>
+<br>

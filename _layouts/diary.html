@@ -13,3 +13,22 @@ layout: default
 		{%- include section.html title=_section.title photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_section.content -%}
 	{%- endfor -%}
 </div>
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script defer>
+    var disqusload = false; //initiate as false
+        var waypoint = new Waypoint({
+            element: document.getElementById('disqus_thread'),
+            handler: function () { // DON'T EDIT BELOW THIS LINE
+                if(disqusload) return;
+                var d = document, s = d.createElement('script');
+                s.src = 'https://gamer2810.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                disqusload = true;
+            },
+            offset: 'bottom-in-view',
+    });
+</script>
+{% endif %}
