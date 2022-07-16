@@ -22,7 +22,7 @@ layout: default
 		  var anchor = document.createElement("a");
 		  anchor.className = "header-link";
 		  anchor.href = "#" + id;
-		  anchor.innerHTML = '<span> </span><i class="fa fa-link" style="font-size: smaller;"></i>';
+		  anchor.innerHTML = '<span> </span><i class="fa fa-link" style="font-size: 60%;"></i>';
 		  return anchor;
 		};
 	
@@ -62,8 +62,6 @@ layout: default
 		  }
 		};
 	  </script>
-</div>
-
 
 {% if page.comments %}
 <div id="disqus_thread"></div>
@@ -83,3 +81,4 @@ layout: default
     });
 </script>
 {% endif %}
+</div>
